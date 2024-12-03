@@ -34,6 +34,7 @@ export default function Products(){
                             <Product 
                                key={flower.id}
                                flower={flower}
+                               onAddToCart={AddToCart}
                                />
                         )
                     )
@@ -42,9 +43,7 @@ export default function Products(){
 
             </div>
             <div className="item3">
-                {
-                //cart
-                }
+             <Cart cart={cart}/>
             </div>
         </>
     );
